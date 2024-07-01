@@ -24,7 +24,7 @@
     justify-content: space-evenly;
     background-color: $firozehiColor;
     text-align: center;
-    color: grey;
+    color: $darkBlueColor ;
     padding: 10px 0;
     margin-top: 30px;
   }
@@ -32,6 +32,10 @@
   .footer a {
     text-decoration: none;
     color: $blueColor;
+  }
+  :hover.footer a  {
+    text-decoration: underline;
+    color: $darkBlueColor;
   }
 
   .container {
