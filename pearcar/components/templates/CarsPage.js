@@ -1,10 +1,11 @@
 import styles from "../../styles/CarsPage.module.scss"
+import Card from "../modules/Card"
 
 function CarsPage({carsData}) {
   return (
     <div className={styles.container}>
         {carsData.map((car) => (
-        <p key={car.id} className={styles.item}>{car.name}</p>
+        <Card key={car.id} {... car} />
       ))}
     </div>
   )
