@@ -1,5 +1,9 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <h1>Pear Car</h1>
+    <div>
+        <Link href='/cars'>pear cars</Link>
+    </div>
   );
 }
