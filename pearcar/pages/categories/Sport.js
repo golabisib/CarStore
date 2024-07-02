@@ -1,11 +1,11 @@
+import CarsList from "@/components/templates/CarsList";
+import carsData from "@/data/carsData";
 
 
 function Sport() {
-  return (
-    <div>
+    const SportCars = carsData.filter((car) => car.category === "sport");
 
-    </div>
-  )
+    return <CarsList data={SportCars} />;
 }
 
 export default Sport

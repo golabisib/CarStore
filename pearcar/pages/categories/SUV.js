@@ -1,11 +1,11 @@
+import CarsList from "@/components/templates/CarsList";
+import carsData from "@/data/carsData";
 
 
 function SUV() {
-  return (
-    <div>
+    const SUVCars = carsData.filter((car) => car.category === "suv");
 
-    </div>
-  )
+    return <CarsList data={SUVCars} />;
 }
 
 export default SUV
