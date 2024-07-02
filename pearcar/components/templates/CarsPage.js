@@ -1,14 +1,14 @@
-import styles from "../../styles/CarsPage.module.scss"
-import Card from "../modules/Card"
+import Card from "../modules/Card";
+import styles from "../../styles/CarsPage.module.scss";
 
-function CarsPage({carsData}) {
+function CarsPage({ data }) {
   return (
     <div className={styles.container}>
-        {carsData.map((car) => (
-        <Card key={car.id} {... car} />
+      {data.map((car) => (
+        <Card key={car.id} {...car} />
       ))}
     </div>
-  )
+  );
 }
 
-export default CarsPage
+export default CarsPage;
