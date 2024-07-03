@@ -8,7 +8,7 @@ function Details() {
     <div>
       <SearchBar />
       <Categories />
-      <CarsPage carsData={carsData} />
+      <CarsPage data={carsData} />
     </div>
   );
 }

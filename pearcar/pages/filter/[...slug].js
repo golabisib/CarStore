@@ -14,4 +14,4 @@ function filterCars() {
   return <CarsList data={filteredData}  />;
 }
 
-export default FilterCars;
+export default filterCars;
